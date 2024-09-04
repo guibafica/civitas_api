@@ -35,9 +35,10 @@ export async function CreateCourse(app: FastifyInstance) {
       });
 
       if (isCourseExists) {
-        throw new Error(
-          "Duplicated course, it is not allowed to register a new course with this number or subject"
-        );
+        return res.status(409).send({
+          message:
+            "Duplicated course! It is not allowed to register a new course with this number or subject",
+        });
       }
 
       const course = await prisma.course.create({
