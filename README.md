@@ -25,6 +25,8 @@ The application handles course details such as subject, course number (formatted
 ## Used Techs
 
 - Fastify: A highly performant and low-overhead web framework for Node.js, designed to help developers build fast and scalable web applications.
+- Prisma:
+- Zod:
 
 # How to run the project
 
@@ -35,13 +37,27 @@ The application handles course details such as subject, course number (formatted
 ## Application
 
 ```bash
-# To install project dependencies
+# (1) Install project dependencies
 npm install
 ```
 
 ```bash
-# Run the application on localhost -> http://localhost:3333
+# (2) Create a .env file in the root of the project, following exactly the example of the .env.example file
+```
+
+```bash
+# (3) Initialize database
+npx prisma migrate dev
+```
+
+```bash
+# (4) Run the application on localhost -> http://localhost:3333
 npm run dev
+```
+
+```bash
+# You can view the database through Prisma Studio -> http://localhost:5555/
+npx prisma studio
 ```
 
 # Author
