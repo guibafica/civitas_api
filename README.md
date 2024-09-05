@@ -22,6 +22,11 @@ The application handles course details such as subject, course number (formatted
   - Add/Delete: Easily add new courses or delete existing ones.
   - Validation: Ensures course number formatting and unique course entries.
 
+- Secondary
+
+  - When listing courses, the application could include pagination functionality to improve navigation of longer course lists.
+  - Unit tests of application routes.
+
 ## Used Techs
 
 - Fastify: A highly performant and low-overhead web framework for Node.js, designed to help developers build fast and scalable web applications.
