@@ -23,7 +23,7 @@ export async function ListCourses(app: FastifyInstance) {
     },
     async (req, res) => {
       const { page = 1, description } = req.query;
-      const itemsPerPageLimit = 10;
+      const itemsPerPageLimit = 6;
 
       const where = description
         ? {

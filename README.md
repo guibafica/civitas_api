@@ -72,6 +72,14 @@ npx prisma studio
 npm run test
 ```
 
+### Extra
+
+I chose these technologies, such as SQLite for the database, with a focus on development speed, as this is just a test scenario. The advantage of using SQLite is that it requires no environment configuration, allowing for a complete test of the application in one go. Since I opted to use Prisma as the ORM, switching to a different database in the future would be easy. However, when thinking about scalability and a commercial project, I would likely choose technologies like GraphQL for better entity management and the ability to perform multiple operations at once using queries and mutations. And a PostgreSQL database.
+
+Regarding the ID, I would prefer using a UUID format (for best practices and security), but technically, this is a string, and following the challenge information, "All fields other than id are strings," I opted for a simple auto-incrementing integer.
+
+Although the focus was on the speed and simplicity of the project, I created a structure that follows best practices, ensuring clear separation of responsibilities and making it easily extensible for new features.
+
 # Author
 
 Made with 💚 by Guilherme Bafica 👋
