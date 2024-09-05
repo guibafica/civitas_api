@@ -12,7 +12,6 @@ import { DeleteCourse } from "./routes/delete-course";
 const app = Fastify();
 
 app.register(cors, {
-  // Only for testing purposes, I'll let this available for all origins
   origin: "*",
 });
 
@@ -25,6 +24,6 @@ app.register(CreateCourse);
 app.register(ListCourses);
 app.register(DeleteCourse);
 
-app.listen({ port: 3333 }).then(() => console.log("🚀 Server running 🚀"));
+app.listen({ port: 3000 }).then(() => console.log("Test server's running"));
 
 export default app;
