@@ -5,14 +5,14 @@
 This application allows users to manage course records. Built with a focus on simplicity, it has functionalities to add, search, and delete courses.
 The application handles course details such as subject, course number (formatted as three-digit, zero-padded integer), and description. And it prevents the addition of duplicate courses and validates course numbers.
 
-## Project presentation
+<!-- ## Project presentation
 
 <img
   alt="Civitas API"
   title="Civitas API' presentation gif"
   src="./src/assets/presentationGif.gif"
   height="425"
-/>
+/> -->
 
 ## Functionalities
 
